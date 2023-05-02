@@ -1,0 +1,112 @@
+.product {
+  padding-top: 120px;
+  padding-bottom: 168px;
+}
+.product-row {
+  display: flex;
+  justify-content: space-between;
+}
+.product-img {
+  border-radius: 18px;
+}
+.product-img-wrapper {
+  margin-right: 86px;
+  padding-left: 60px;
+  padding-bottom: 74px;
+  position: relative;
+}
+.product-card {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.product-content {
+  max-width: 584px;
+}
+.product-content-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 157%;
+  color: #424242;
+}
+
+.product-content-title + * {
+  margin-top: 10px;
+}
+.product-content-subtitle {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #01996d;
+}
+.product-content-subtitle + * {
+  margin-top: 20px;
+}
+.product-content-text {
+  max-width: 530px;
+  line-height: 144.5%;
+}
+.product-content-text + * {
+  margin-top: 40px;
+}
+.product-content-btn {
+  display: flex;
+  margin-top: 40px;
+}
+@media (max-width: 1299px) {
+	.product {
+		padding-top: 80px;
+	}
+	.product-img-wrapper {
+		flex: 1 0 auto;
+		flex-basis: 50%;
+	}
+	.product-content-subtitle {
+		font-size: 40px;
+		line-height: 130%;
+	}
+	.product-card {
+		top: 60%;
+	}
+}
+
+@media (max-width: 991px) {
+	.product {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	.product-row {
+		flex-direction: column-reverse;
+	}
+	.product-content {
+		margin-bottom: 40px;
+	}
+	.product-content-subtitle {
+		font-size: 30px;
+	}
+	.product-card {
+		position: relative;
+		z-index: 2;
+		margin-top: -10%;
+		display: flex;
+		justify-content: center;
+	}
+	.product-img-wrapper {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.product {
+		padding-bottom: 40px;
+	}
+	.product-card {
+		margin: -30% 15px 0;
+	}
+}

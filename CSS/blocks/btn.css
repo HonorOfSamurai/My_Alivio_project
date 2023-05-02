@@ -1,0 +1,29 @@
+.btn,
+a.btn {
+  display: inline-block;
+  background-color: #01996d;
+  line-height: 51px;
+  height: 51px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.btn-big,
+a.btn-big {
+  min-height: 65px;
+}
+
+.btn:hover,
+a.btn:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.home-btn {
+  display: flex;
+}
